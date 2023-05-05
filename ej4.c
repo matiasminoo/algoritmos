@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 
+
 // Ejercicio 4
 
 bool same(int a, int b) { return a == b ? "1" : "0"; }
@@ -23,5 +24,4 @@ int main() {
     printf("El valor absoluto es: %d\n", abs_value(3));
     printf("El valor maximo es: %d\n", max(3,6));
     printf("El valor minimo es: %d\n", min(3,6));
-    return 0;
 }
