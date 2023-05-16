@@ -27,6 +27,11 @@ int calcularSalario(int ht, int sxh) {
 double Producto_escalar_dos_dim(double x1, double x2, double y1, double y2) {
     return x1 * y1 + x2 * y2;
 }
+//h
+double sumaVectores(double x1, double x2, double y1, double y2) {
+    double sumando = x1 + x2 + y1 + y2;
+    return sumando;
+}
 
 int main(int argc, char *argv[]) {
     // A
@@ -34,7 +39,7 @@ int main(int argc, char *argv[]) {
     int value = asciiValue(*input);
     printf("El valor ASCII de '%s' es %d\n", input, value);
     // B 
-     double x, y;
+    double x, y;
     printf("Ingrese las coordenadas x e y del punto:\n");
     scanf("%lf %lf", &x, &y);
     double distancia = calcularDistancia(x, y);
@@ -48,8 +53,9 @@ int main(int argc, char *argv[]) {
     scanf("%d %d", &ht, &sxh);
     int salario = calcularSalario(ht,sxh);
     printf("El salario total es: %d\n", salario);
-    // E
-    
+    // h
+    double sumando = sumaVectores();
+printf("La suma de los vectores en el plano es: %.2f\n", sumando);
     // F
 double x1 = atof(argv[2]);
 double x2 = atof(argv[3]);
