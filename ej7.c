@@ -1,32 +1,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+// A
 int generarNumeroAleatorio() {
     srand(time(NULL));  // Inicializar la semilla aleatoria
     
     int numeroAleatorio = rand();
     return numeroAleatorio;
 }
-
+// B
 int randomNum() {
     int randomNumCeroaCien = rand() % 100;
     return randomNumCeroaCien;
 }
-
+// C
 int randomNum2() {
     int randomNumCeroaDiez = rand() % 11;
     return randomNumCeroaDiez;
 }
+// D
 int randomNum3() {
     int random = rand();
     return random;
 }
+// E
 int randomNum4(int a, int b) {
     int rango = b - a; 
     int aleatorio = rand() % rango + a;  
     return aleatorio;
 }
+// F
 int randomNum5(int a, int b) {
     int aleatorio = rand() % (b - a + 1) + a;  
     return aleatorio;
