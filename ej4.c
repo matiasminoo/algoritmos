@@ -6,7 +6,7 @@
 
 // Ejercicio 4
 
-bool same(int a, int b) { return a == b ? "1" : "0"; }
+bool same(int a, int b) { return a == b ? 1 : 0; }
 
 int abs_value(int x) { return x < 0 ? -x : x; }
 
