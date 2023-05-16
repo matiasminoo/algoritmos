@@ -5,15 +5,12 @@
 //Dado cargado
 
 int roll_dice() {
-    int dice = rand() % 8;
-    return dice < 5 ? dice+1 : 6;
+    srand(time(NULL));
+    int dice = rand() % 8 + 1;
+    return dice > 5 ? 6 : dice;
 }
 
 int main() {
-    srand(time(NULL));
-    printf("%d\n", roll_dice());
-    printf("%d\n", roll_dice());
-    printf("%d\n", roll_dice());
     printf("%d\n", roll_dice());
     return 0;
 }
