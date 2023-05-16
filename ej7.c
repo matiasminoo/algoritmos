@@ -20,7 +20,7 @@ int randomNum2() {
 }
 // D
 int randomNum3() {
-    int random = rand();
+    int random = rand() - 1;
     return random;
 }
 // E
