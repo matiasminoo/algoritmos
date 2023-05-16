@@ -3,7 +3,7 @@
 
 
 int saludar() {
-    printf("Que onda bro");
+    printf("Que onda bro\n");
 }
 int main(void) {
     saludar();
