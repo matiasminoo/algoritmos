@@ -34,7 +34,7 @@ double Producto_escalar_dos_dim(double x1, double x2, double y1, double y2)
 // h
 double sumaVectores(double x1, double x2, double y1, double y2)
 {
-    double sumando = x1 + x2 + y1 + y2;
+    double sumando = (x1 + x2) + (y1 + y2);
     return sumando;
 }
 
@@ -60,7 +60,8 @@ int main(int argc, char *argv[])
     int salario = calcularSalario(ht, sxh);
     printf("El salario total es: %d\n", salario);
     // h
-    double sumando = sumaVectores();
+    double x1, x2, y1, y2;
+    double sumando = sumaVectores(x1, x2, y1, y2);
     printf("La suma de los vectores en el plano es: %.2f\n", sumando);
     // F
     double x1 = atof(argv[2]);
