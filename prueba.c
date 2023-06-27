@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int absoluto(int numero)
 {
@@ -17,7 +16,7 @@ int main()
 {
     int a;
 
-    printf("Ingrese un número entersso: ");
+    printf("Ingrese un número entero: ");
     scanf("%d", &a);
 
     int valor_absoluto = absoluto(a);
